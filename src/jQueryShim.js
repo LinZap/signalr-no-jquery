@@ -59,6 +59,7 @@ const xhr = function() {
 
 const ajax = function(options) {
   const request = xhr();
+
   request.onreadystatechange = () => {
     if (request.readyState !== 4) {
       return;
